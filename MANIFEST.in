@@ -1,0 +1,2 @@
+include versioneer.py
+include pyhmsa_measurement/_version.py
