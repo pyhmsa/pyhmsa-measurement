@@ -52,7 +52,7 @@ setup(name='pyHMSA-measurement',
       packages=packages,
 
       install_requires=['pyhmsa'],
-#       tests_require=['Pillow', 'nose', 'coverage'],
+      tests_require=['nose', 'coverage'],
 
       zip_safe=False,
 
@@ -60,9 +60,9 @@ setup(name='pyHMSA-measurement',
 
     entry_points=\
       {'pyhmsa.fileformat.xmlhandler.condition':
-          ['MeasurementPeak = pyhmsa_measurement.fileformat.xmlhandler.condition.measurement:MeasurementPeakXMLHandler',
-           'MeasurementBackground = pyhmsa_measurement.fileformat.xmlhandler.condition.measurement:MeasurementBackgroundXMLHandler',
-           'MeasurementNet = pyhmsa_measurement.fileformat.xmlhandler.condition.measurement:MeasurementNetXMLHandler',]
+          ['BackgroundID = pyhmsa_measurement.fileformat.xmlhandler.condition.backgroundid:BackgroundIDXMLHandler',
+           'IntensityID = pyhmsa_measurement.fileformat.xmlhandler.condition.intensityid:IntensityIDXMLHandler',
+           ]
       },
 
       cmdclass=cmdclass,
